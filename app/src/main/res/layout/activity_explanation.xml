@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Exploration vs Exploitation"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/explanationImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/explanation_image_desc"
+            android:src="@drawable/exploration_vs_exploitation" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="Should I dare to go for new opportunities, with the of not finding success, or should I rather stick with what I know and be happy with it? Life is full of micro-decisions that reflect this duality. This trade-off between 'the familiar' with promising rewards, and 'the unknown' with potentially even greater rewards (or no rewardsa at all) is also referred to as the 'Exploration-Exploitation-dilemma'. The interaction of these two extremes is therefore defined as a dilemma, since the agent can never can never pursue both ideas at the same time and the advantages and disadvantages negate each other."
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="It's the same underlying premise that also goes for probability theory and machine learning where the scenario of trying to find the most optimal decisions despite having little to no information in an unknown environemnt can be analysed using data. The so called 'multi-armed bandit problem' is one of the most prominent examples of this kind. It describes the scenario in which you find yourself in front of a number of slot machines ('bandits') and are faced with the task of profit maximization - without any knowledge of the actual bandit's win rates."
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="The ɛ-Greedy Algorithm serves as an intuitive yet powerful solution to this problem. It generally follows an exploitative ('greedy') policy - but at the same time takes into account the potential opportunities of further exploring through the variable ɛ (defines the rate at which exploration is pursued). This way it aims to find the good balance between both, exploring and exploiting regarding all available decisions."
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/explanationImage2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/explanation_image_desc"
+            android:src="@drawable/exploration_vs_exploitation_2" />
+
+        <Button
+            android:id="@+id/btn_back_to_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="Alright! Got it!" />
+
+    </LinearLayout>
+</ScrollView>

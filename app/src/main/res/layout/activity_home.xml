@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/explanationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="217dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/explanation_image_desc"
+        android:src="@drawable/multi_armed_bandit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="167dp"
+        android:gravity="center"
+        android:paddingBottom="24dp"
+        android:text="Hello knowledge-seeker!\n\nAre you eager to see a visualization of the multi-armed bandit problem via the ɛ-greedy algorithm?"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_yes"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="Yes!"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="I'm a bit lost. What is the multi-armed bandit problem?" />
+
+</LinearLayout>

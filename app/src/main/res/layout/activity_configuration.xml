@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 1) Number of Bandits Label & Slider -->
+    <TextView
+        android:id="@+id/labelBandits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set number of bandits (3 - 8):"
+        android:textSize="16sp" />
+
+    <SeekBar
+        android:id="@+id/seekBarBandits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5" />
+
+    <!-- 2) Epsilon Label & Slider -->
+    <TextView
+        android:id="@+id/labelEpsilon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set epsilon (0.01 - 0.99):"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarEpsilon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="98" />
+
+    <!-- 3) Iteration Limit Label & Slider -->
+    <TextView
+        android:id="@+id/labelLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set iterations limit (20 - 200):"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="18" />
+
+    <!-- 4) Interval Label & Slider -->
+    <TextView
+        android:id="@+id/labelInterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set iteration interval (1 ms - 40 ms):"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarInterval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="39" />
+
+    <!-- Start-Button -->
+    <Button
+        android:id="@+id/buttonStartVisualization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Visualization"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

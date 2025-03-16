@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- (1) Neuer Text oben: "What do you want to do?" -->
+    <TextView
+        android:id="@+id/postVisTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What do you want to do?"
+        android:textSize="24sp"
+        android:layout_marginBottom="30dp" />
+
+    <!-- (2) "Go Home" -->
+    <Button
+        android:id="@+id/btn_go_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Home"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- (3) "Generate New Algorithm" (statt "Generate new Algorithm") -->
+    <Button
+        android:id="@+id/btn_generate_algorithm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate New Algorithm"
+        android:layout_marginBottom="15dp" />
+
+    <!-- (4) Neuer Button "Log out" -->
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:layout_marginBottom="15dp" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/iterationInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actions so far: 0"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/iterationInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/iterationInfo"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/epsilonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bandits: ??    ε: ??    interval: ?? ms"
+        android:textSize="16sp"
+        android:layout_below="@id/iterationInfo2"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/toggleViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Value Table / Log"
+        android:layout_below="@id/epsilonLabel"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <com.example.multiarmedbanditvisualizer.VisualizationView
+        android:id="@+id/visualizationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toggleViewButton"
+        android:layout_above="@+id/niceButton" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toggleViewButton"
+        android:layout_above="@+id/niceButton"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/qTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"/>
+        </ScrollView>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/niceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice Visualization!"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

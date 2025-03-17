@@ -7,28 +7,7 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
-/**
- * VisualizationView
- * -----------------
- * Zeigt das Koordinatensystem und den Graph der Q-Werte.
- *  - X-Achse: 0..algorithm.getLimit() (in ~10 Schritten)
- *    -> So wie wir es zuletzt hatten.
- *    Wenn du fest 0..30 haben willst, setze es wieder fest.
- *  - Y-Achse: 0..1
- *    * Gitter alle 0.1 => 0%,10%..100%,
- *      Beschriftung NUR bei 0%,20%,40%,60%,80%,100%
- *  - Achsen-Beschriftung X => "Iterations"
- *  - Y-Beschriftung => "Approximated Probabilities"
- *  - Die Bandit-Farben haben die Reihenfolge:
- *     A => Türkis (#40E0D0)
- *     B => Pink   (#FF69B4)
- *     C => Braun  (#8B4513)
- *     D => D-blau (#00008B)
- *     E => Gelb   (#FFFF00)
- *     F => Grau   (#808080)
- *     G => Grün   (#008000)
- *     H => Rot    (#FF0000)
- */
+
 public class VisualizationView extends View {
 
     private EpsilonGreedy algorithm;
